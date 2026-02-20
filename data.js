@@ -145,27 +145,27 @@ const questData = {
         "Head North from Corhyn and take the portal next to the Forest Spanning Greatbridge Grace. Find Goldmask on the North end of the bridge. Talk to Corhyn, then reload the area and return to Goldmask",
         "Go through Windmill Village and talk to Milicent at the Windmill Heights Grace",
         "Head South East to reach the Outer Wall Battleground grace. Then, head south to find Margit disguised as a commoner",
-        "Keep heading East to find Blackguard Big Boggart at the North outer moat of Leyndell and buy some boiled crab.",
-        "Nokron/Nokstella - After fighting Radahn (Note: If you have not completed Selevus' questline, wait to complete this area until after).",
-        "Find a message from Blaidd South East from the Mistwood Ruins on a ramp leading into the Starfall Crater"
+        "Keep heading East to find Blackguard Big Boggart at the North outer moat of Leyndell and buy some boiled crab."
       ]
     },
     {
-      "title": "Go speak to Iji",
+      "title": "Nokron/Nokstella - After fighting Radahn (Note If you have not completed Selevus' questline, wait to complete this area until after).",
       "tasks": [
-        "Go to the Forlorn Hound Evergael to free Blaidd"
-      ]
-    },
-    {
-      "title": "Go speak to Iji",
-      "tasks": [
+        "Find a message from Blaidd South East from the Mistwood Ruins on a ramp leading into the Starfall Crater",
+        "Go speak to Iji",
+        "Go to the Forlorn Hound Evergael to free Blaidd",
+        "Go speak to Iji",
         "Take the path into the Starfall Crater to reach Nokron. Go through Nokron to the Night’s Sacred Ground to find the Fingerslayer Blade. Bring it to Ranni. Then reload the area and return to Ranni's room.",
         "From Ranni’s Rise, head to a tower to the North and take the waygate to Ainsel River Main. Rest at the first Grace and choose “talk to miniature Ranni” 3 times. Throughout the rest of this quest, check for the \"Talk to Ranni\" option any time you rest at a Grace.",
         "Continue through Nokstella until you get a discarded key. Use it on the chest in the Raya Lucaria Grand Library. Then, cross the Lake of Rot and climb in a coffin. Continue until you find Ranni.",
         "Return to Ranni’s Rise and find Blaidd outside.",
         "Talk to Iji. Then, reload the area.",
-        "Head to the Carian Study Hall in East Liurnia. Use the Inverted Statue to go to the top and find Ranni’s cursemark (For Fia’s questline)",
-        "Deeproot Depths: From northern Nokron, follow the jellyfish to drop off a ledge onto a small pathway",
+        "Head to the Carian Study Hall in East Liurnia. Use the Inverted Statue to go to the top and find Ranni’s cursemark (For Fia’s questline)"
+      ]
+    },
+    {
+      "title": "Deeproot Depths From northern Nokron, follow the jellyfish to drop off a ledge onto a small pathway",
+      "tasks": [
         "There is a man unable to speak. Give him D’s armor. Reload the area. Then, you can summon D to help fight the final boss.",
         "After the boss, climb into the coffin and follow the roots upward until you reach a large room with Fia. Ask to be held. Reload the area and talk to her multiple times until you find her sleeping. Interact with her to fight the Lichdragon Fortissax. Then, interact with her again.",
         "Reload the area to talk to D next to Fia. Then, reload the area and return to where he was."
@@ -238,8 +238,12 @@ const questData = {
         "Go through Castle Sol in the North to get half of the Haligtree Medallion. Then, talk to Gideon",
         "Talk to Corhyn and Goldmask on the bridge directly above the Ancient Snow Valley Ruins grace. If you still have the Potion of Forgetfulness, you can give it to Corhyn here, and he will remain at this location. If you don't give him the potion, he will die later on, dropping an item",
         "Summon Alexander for the fire giant boss fight",
-        "Do not go up to the Forge of the Giants yet",
-        "Consecrated Snowfield/ Haligtree: Accessed by getting both Medallion halves, going to the Grand Lift of Rold, and click left or right to “hoist secret medallion”",
+        "Do not go up to the Forge of the Giants yet"
+      ]
+    },
+    {
+      "title": "Consecrated Snowfield/ Haligtree Accessed by getting both Medallion halves, going to the Grand Lift of Rold, and click left or right to “hoist secret medallion”",
+      "tasks": [
         "Deathroot #9 In the Hidden Path to the Haligtree catacombs, jump down onto an invisible path. Look for messages or use your rainbow stones to find your way. The deathroot is in a chest behind the final boss.",
         "After reaching the Consecrated Snowfield, speak to Gideon in the Roundtable Hold",
         "In the Northwest of the Consecrated Snowfield, just West of the end of the river, summon Latenna at the Apostate Derelict church",
@@ -252,12 +256,8 @@ const questData = {
         "Seedbed Curse #5 From the Prayer Room grace, keep heading forwards, going down every staircase you come across. When you find a room with two Cleanrot Knights inside, instead of entering, jump over the railing to the right and drop down one level. Turn around, enter the dark room right under the railing and you will find it on a body that is sitting in a chair.",
         "Once you’ve collected all of the Seedbed Curses, return to Dung Eater in the Leyndell sewer",
         "Continue onwards through the Haligtree to the Drainage Channel Grace. Then, return where you came from, up the ladder, and kill the Defiled Root Monster nearby. Once it’s dead, reload the area, and you should see 2 summon signs where it was. You can either choose to summon Milicent as an ally (gold) or enemy (red). If you help her, you can talk to her afterwards. Then, reload the area to find an item where she was.",
-        "Talk to Gowry"
-      ]
-    },
-    {
-      "title": "After defeating Melania, talk to Gideon",
-      "tasks": [
+        "Talk to Gowry",
+        "After defeating Melania, talk to Gideon",
         "You can now go back to go up to the Forge of the Giants"
       ]
     },
@@ -277,12 +277,8 @@ const questData = {
         "Talk to everybody in the Roundtable Hold",
         "Find Goldmask along the path to the right of the stairs leading to the Erdtree Sanctuary",
         "Find Corhyn at the base of the spiral spear statue. Reload the area to find an item where he was.",
-        "Summon Nepheli and Shabriri to fight the First Elden Lord"
-      ]
-    },
-    {
-      "title": "After the Final Boss",
-      "tasks": [
+        "Summon Nepheli and Shabriri to fight the First Elden Lord",
+        "After the Final Boss",
         "If you would like to complete all of the endings, copy your save data after completing the final boss, but before making any kind of choice. You can sit at the Site of Grace."
       ]
     },
@@ -291,12 +287,8 @@ const questData = {
       "tasks": [
         "Note: You can complete this at any point during the game, and it will lock you into the frenzied flame ending.",
         "-If you become the Frenzied Flame after your final boss save, you can complete this ending last, and you will not need Miquella's needle (can skip the fight with Melania)",
-        "-If you become the Frenzied Flame before going up to the Forge of the Giants, you will unlock extra dialogue with Melina and Shabriri. You will then complete this ending first and will need to undo the Frenzied Flame to get the other endings."
-      ]
-    },
-    {
-      "title": "To become the Frenzied Flame",
-      "tasks": [
+        "-If you become the Frenzied Flame before going up to the Forge of the Giants, you will unlock extra dialogue with Melina and Shabriri. You will then complete this ending first and will need to undo the Frenzied Flame to get the other endings.",
+        "To become the Frenzied Flame:",
         "To become the Frenzied Flame, go to the very base of Lyndell’s sewers and fight Mohg, The Omen",
         "If you do this early in the game, speak to Melina at the Cathedral of the Forsaken",
         "Roll into the altar behind the chest.",
@@ -304,12 +296,8 @@ const questData = {
         "Speak to Melina at the Frenzied Flame Proscription",
         "Talk to Hyetta, following her instructions and exhausting her dialogue. If you did not complete Hyetta's questline, you can still go through the door by taking off all of your armor.",
         "Speak to Melina again at the Site of Grace",
-        "Return to Shabriri at Zamor Ruins Grace"
-      ]
-    },
-    {
-      "title": "To remove the Frenzied Flame",
-      "tasks": [
+        "Return to Shabriri at Zamor Ruins Grace",
+        "To remove the Frenzied Flame:",
         "After defeating Melania, use the Unalloyed Gold Needle on the flower in the boss room to get Miquella’s needle",
         "Use Miquella’s needle in the boss arena of Dragonlord Placidusax’s in Crumbling Farum Azula. To find it, look for some debris you can jump onto between Dragon Temple Rooftop and Beside the Great Bridge (after the dragon, and before the elevator). Jump along the rubble until you find an empty grave that you can lay down in. You do not need to fight the boss."
       ]
@@ -369,8 +357,12 @@ const questData = {
         "Speak to Thiollier after defeating the Putrescent Knight.",
         "Imbibe the nectar four times. Then speak to Thiollier and exhaust his dialogue.",
         "Imbibe the nectar again. This time Thiollier will invade. Defeat him.",
-        "Imbibe the nectar again and speak to Thiollier again.",
-        "Jagged Peak - Continuing North from the Dragon Pit Terminus",
+        "Imbibe the nectar again and speak to Thiollier again."
+      ]
+    },
+    {
+      "title": "Jagged Peak - Continuing North from the Dragon Pit Terminus",
+      "tasks": [
         "Speak to Igon after defeating the dragon near the Foot of the Jagged Peak Grace.",
         "Return to the Grand Altar of Dragon Communion to speak to the Dragon Communion Priestess. Choose whether to give her the potion from Thiolier. At the end of her questline, if you don't give her the potion, you receive a consumable and a weapon and if you do, you'll receive an incantation and spirit ashes. To give her the potion, pass time until nightfall, give her the potion, and pass time again until you can speak to her again.",
         "Summon Igon to fight Bayle (required for quest)",

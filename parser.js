@@ -22,10 +22,32 @@ function parseOriginalFile(filename, startLineString) {
             continue;
         }
 
-        // Identify headers (Short length is a key indicator)
-        // If it ends with a colon but is very long, it's a descriptive sentence, not a header.
-        const isHeader = (line.endsWith(':') && line.length < 50) || 
-                         (line.length < 40 && !line.includes('.') && !line.startsWith('Talk') && !line.startsWith('Speak') && !line.startsWith('Meet') && !line.startsWith('Find') && !line.startsWith('Summon') && !line.startsWith('Defeat') && !line.startsWith('Return') && !line.startsWith('Choose'));
+        // Identify headers
+        const actionVerbs = ['Talk', 'Speak', 'Meet', 'Find', 'Summon', 'Defeat', 'Return', 'Choose', 'Go', 'To', 'After', 'Grab', 'Search', 'Travel', 'Take', 'Use', 'Kill', 'Pick', 'Interact', 'Give', 'Cross', 'Head', 'Once', 'Continue', 'Buy', 'Get', 'Complete', 'Rest', 'Do not'];
+        const cleanLineForCheck = line.replace(/^\*{2,5}\s*/, '').replace(/^- /, '').trim();
+        const startsWithAction = actionVerbs.some(verb => cleanLineForCheck.startsWith(verb + ' ') || cleanLineForCheck.startsWith(verb + ','));
+
+        const isLongOrSentence = line.length >= 50 || line.includes('?');
+        
+        // Exceptions for known long headers
+        const isKnownLongHeader = line.startsWith('Nokron/Nokstella') || 
+                                  line.startsWith('Deeproot Depths:') ||
+                                  line.startsWith('Consecrated Snowfield/') ||
+                                  line.startsWith('Mt Gelmir') ||
+                                  line.startsWith('Jagged Peak -') ||
+                                  line.startsWith('Shadow Keep/') ||
+                                  line.startsWith('***** Frenzied Flame Ending');
+
+        let isHeader = false;
+        if (isKnownLongHeader) {
+            isHeader = true;
+        } else if (!startsWithAction) {
+            if (line.endsWith(':') && line.length < 50) {
+                isHeader = true;
+            } else if (!line.endsWith(':') && !isLongOrSentence && !line.includes('.')) {
+                isHeader = true;
+            }
+        }
 
         if (isHeader) {
             if (currentRegion && currentRegion.tasks.length > 0) {
