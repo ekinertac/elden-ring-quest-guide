@@ -5,17 +5,19 @@ const questData = {
             "tasks": [
                 "Speak with White-Faced Varre next to The First Step Grace.",
                 "Speak with Merchant Kale at the Church of Elleh.",
-                "Upon reaching Torrent, return to Church of Elleh at night to meet Renna (Ranni).",
+                "Rest at the Gatefront Site of Grace to meet Melina and receive the Spectral Steed Whistle (Torrent).",
+                "After receiving Torrent, fast travel back to the Church of Elleh at night to meet Renna (Ranni) and receive the Spirit Calling Bell.",
                 "Find and speak with Boc by rolling into a talking tree North of Agheel Lake.",
                 "Speak with Boc at the Coastal Cave on the Western shore of Limgrave.",
                 "Defeat the boss of Coastal Cave (can summon Old Knight Isrvan). Then speak with Boc again and give him the sewing needle.",
-                "Find and speak with Sorceress Sellen under the Waypoint Ruins, East of Agheel Lake. Accept her offer to teach you sorceries.",
+                "Find and speak with Sorceress Sellen under the Waypoint Ruins, East of Agheel Lake. Accept her offer to teach you sorceries. (She is behind the Mad Pumpkin Head boss.)",
                 "Find and speak with Bloody Finger Hunter Yura South-East of Agheel Lake, under an overpass. After killing the dragon, talk to him again.",
                 "Travel to the Northern section of Agheel Lake, up a stream, you will be invaded by Bloody Finger Nerijus. Stay alive long enough for Bloody Finger Hunter Yura to appear and help you defeat him. Then, continue walking North up the stream to talk to Bloody Finger Hunter Yura.",
-                "Enter Murkwater Cave near where you fought Nerijus. In the last room, open the chest and fight Patches until he surrenders. Then, stop and exhaust his dialogue. Reload the area and exhaust his dialogue. Then open the other chest nearby, which will transport you to Mistwood. Head North to the Third Church of Marika. Fast travel back to Murkwater Cave and talk to Patches again. Attack Patches until he starts fighting back. Avoid him until he gives you a gesture, then use that gesture. Then, reload the area and speak to Patches again.",
+                "Enter Murkwater Cave near where you fought Nerijus. In the last room, open the chest and fight Patches until he surrenders. Then, stop and exhaust his dialogue. Reload the area and exhaust his dialogue. Then open the other chest nearby, which will transport you to Mistwood. Head North to the Third Church of Marika. Fast travel back to Murkwater Cave and talk to Patches again. Attack Patches until he starts fighting back. Avoid him until he gives you a gesture, then use that gesture. Then, reload the area and speak to Patches again. Spare him to open his shop later.",
                 "After you hear howling in the Mistwood, return to the Church of Elleh and speak to Merchant Kale. Return to where you heard the howling, and use the gesture. Find Blaidd in the Mistwood Ruins nearby (avoid waking up the giant bear). Then speak with Kale again.",
                 "On a ruin near the Mistwood Outskirts, find Kenneth Haight. He will ask you to clear Fort Haight, in the South East. Once you’ve cleared Fort Haight, return and talk to him. Return to Fort Haight and talk to him there.",
-                "Summon Blaidd to help you defeat the Forlorn Hound Evergael in Southern Limgrave. Then speak with him outside of the Evergael."
+                "Summon Blaidd to help you defeat the Forlorn Hound Evergael in Southern Limgrave. Then speak with him outside of the Evergael.",
+                "Collect the Flask of Wondrous Physick from the Third Church of Marika in East Limgrave."
             ]
         },
         {
@@ -32,7 +34,7 @@ const questData = {
             "tasks": [
                 "Continuing North toward Stormveil Castle, meet Roderika at the Stormhill Shack. talk to her multiple times and reload the area.",
                 "East of the Stormhill Shack, meet Bernahl at the Warmaster’s Shack.",
-                "East of the Warmaster’s Shack, meet Iron Fist, Alexander on a cliff above the Saintsbridge Grace.",
+                "Find Iron Fist Alexander stuck in a hole on a cliff above Saintsbridge. Hit him from behind with a heavy attack to free him.",
                 "Cross the Saintsbridge and find D, Hunter of the Dead. He will warn you about an enemy nearby. After you defeat that enemy, talk to D again.",
                 "Use the sending gate D told you about to the Bestial Sanctum to meet Gurranq, Beast Clergyman. Give him Deathroot, and he will reward you. After you’ve given him 4 Deathroot, he will aggro, and you will need to hit him a few times to snap him out of it. After giving him 9 Deathroot, he will leave.",
                 "From the Third Church of Marika, continue north up the hill to the Rear Gael Tunnel Entrance. Talk to Alexander.",
