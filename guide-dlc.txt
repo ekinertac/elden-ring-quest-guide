@@ -84,7 +84,7 @@ Follow the Eastern Cerulean coast to the Finger Ruins of Rhia. Use the Hanging B
 Access the Hinterlands by using the O Mother gesture on the statue of Marika near the Shadow Keep, Back Gate. (Optional) Summon Jolan to fight the Tree Sentinel
 Follow the Hinterlands path down to the Finger Ruins of Dheo and use the Hanging Bell. Then, return to speak to Ymir and Jolan at Manus Metyr.
 Access the Finger Ruins of Myr by exhausting Ymir’s dialogue and reloading the area until he leaves his throne. Then, examine the throne. After defeating Swordhand of Night Anna, return to speak to Jolan.
-Use the Hanging Bell and fight Metyr.. Then, return to examine Ymir’s throne..
+Use the Hanging Bell and fight Metyr, Mother of Fingers. Then, return to examine Ymir’s throne. You will have to fight Count Ymir.
 Reload Manus Metyr. Find an item in the cemetery to the West. Speak to Jolan. You can choose to give her an Iris of Grace, resulting in her turning into spirit ashes or an Iris of Occultation, resulting in her dying and dropping her weapon.
 If you gave Jolan Iris of Grace, go to the Shaman Village in the Hinterlands. At the Eastern corner, find a series of dropdowns to allow you to access a section of Rabbath’s Rise, where you'll find Swordhand of Night Anna
 Enir Ilim:
@@ -105,4 +105,4 @@ Speak to Ansbach at the top of the elevator after the fight.
 
 After the final boss, rest at the Gate of Divinity grace, and find Ansbach and Thiollier nearby
 
-After the final boss, return to St Trina
+After the final boss, return to St. Trina at the Fissure to find the St. Trina Blossom.

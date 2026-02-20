@@ -52,6 +52,7 @@ const questData = {
         "Find the Chrysalid’s Memento and give it to Roderika at the Stormhill Shack",
         "From the Liftside Chamber Grace, head around the corner to the right and drop down. Continue through this zone and examine the room behind the final boss, including a bloodstain near there that looks like Rogier.",
         "Before killing Godrick, go from the Secluded Cell Grace toward the main gate, past the troll, and into a side room. Talk to Nepheli. Summon Nepheli to fight Godrick with you.",
+        "After defeating Godrick, reload the area and speak to Gostoc, who will be stomping on Godrick's corpse. This advances his questline.",
         "After killing Godrick, talk to everyone in the Roundtable Hold again. Talk to Roderika and Hewg multiple times until Hewg takes Roderika as an apprentice. Talk to D after talking to Rogier.",
         "After talking to Enia at the Rountable Hold, return to The First Step Grace for a message from White-Faced Varre",
         "Go back to where you found the Chrysalid’s memento for Roderika’s crimson hood."
@@ -81,6 +82,7 @@ const questData = {
         "East of the Scenic Isle, meet Rya. in a pavilion and offer to help.",
         "Meet Blackguard Big Boggart at the Boilprawn Shack, North of the Scenic Isle. Offer to buy the necklace. Then, buy some boiled prawns. Go back to speak to Rya.",
         "From the Folly on the Lake Grace, go South-west to find the Village of the Albinaurics. Talk to Nepheli just outside of the town. Roll into a large pot/bush/tree and it will turn into Albus. Summon Nepheli to help you fight the Omen Killer boss at the end of the Village of the Albinaurics.",
+        "After getting the Haligtree Medallion half from Albus, return to Roundtable Hold to trigger Ensha's invasion. Defeat him for the Royal Remains armor and Clinging Bone.",
         "After talking to Albus, head west from the Laskar Ruins and look along the base of the cliff to the West for a cave. Go through it to speak to Latenna.",
         "Head North to talk to White-Faced Varre at the Rose Church. You must perform 3 invasions to continue his quest (outcome doesn’t matter). Then, talk to him again.",
         "Meet Edgar at the Revenger’s Shack, west of the Rose Church, and get a Shabiri Grape.",
@@ -144,6 +146,7 @@ const questData = {
         "Talk to Milicent at the Erdtree Gazing Hill. Then, return to speak to Gowry. Exhaust his dialogue, buy his incantation, exhaust his dialogue, then attack him. Reload the area and speak to him again",
         "Head North from Corhyn and take the portal next to the Forest Spanning Greatbridge Grace. Find Goldmask on the North end of the bridge. Talk to Corhyn, then reload the area and return to Goldmask",
         "Go through Windmill Village and talk to Milicent at the Windmill Heights Grace",
+        "Before proceeding to Leyndell, stop by the Minor Erdtree Church in Altus Plateau. Speak with Melina at the Site of Grace to receive the \"Outer Order\" gesture.",
         "Head South East to reach the Outer Wall Battleground grace. Then, head south to find Margit disguised as a commoner",
         "Keep heading East to find Blackguard Big Boggart at the North outer moat of Leyndell and buy some boiled crab."
       ]
@@ -166,7 +169,7 @@ const questData = {
     {
       "title": "Deeproot Depths From northern Nokron, follow the jellyfish to drop off a ledge onto a small pathway",
       "tasks": [
-        "There is a man unable to speak. Give him D’s armor. Reload the area. Then, you can summon D to help fight the final boss.",
+        "Just outside the Valiant Gargoyle boss room in Siofra Aqueduct, there is a man unable to speak. Give him D’s armor. Reload the area. Then, you can summon D to help fight the final boss.",
         "After the boss, climb into the coffin and follow the roots upward until you reach a large room with Fia. Ask to be held. Reload the area and talk to her multiple times until you find her sleeping. Interact with her to fight the Lichdragon Fortissax. Then, interact with her again.",
         "Reload the area to talk to D next to Fia. Then, reload the area and return to where he was."
       ]
@@ -397,7 +400,7 @@ const questData = {
         "Access the Hinterlands by using the O Mother gesture on the statue of Marika near the Shadow Keep, Back Gate. (Optional) Summon Jolan to fight the Tree Sentinel",
         "Follow the Hinterlands path down to the Finger Ruins of Dheo and use the Hanging Bell. Then, return to speak to Ymir and Jolan at Manus Metyr.",
         "Access the Finger Ruins of Myr by exhausting Ymir’s dialogue and reloading the area until he leaves his throne. Then, examine the throne. After defeating Swordhand of Night Anna, return to speak to Jolan.",
-        "Use the Hanging Bell and fight Metyr.. Then, return to examine Ymir’s throne..",
+        "Use the Hanging Bell and fight Metyr, Mother of Fingers. Then, return to examine Ymir’s throne. You will have to fight Count Ymir.",
         "Reload Manus Metyr. Find an item in the cemetery to the West. Speak to Jolan. You can choose to give her an Iris of Grace, resulting in her turning into spirit ashes or an Iris of Occultation, resulting in her dying and dropping her weapon.",
         "If you gave Jolan Iris of Grace, go to the Shaman Village in the Hinterlands. At the Eastern corner, find a series of dropdowns to allow you to access a section of Rabbath’s Rise, where you'll find Swordhand of Night Anna"
       ]
@@ -417,7 +420,7 @@ const questData = {
         "Speak to Ansbach at the top of the elevator after the fight.",
         "(Optional) Summon Ansbach and Thiollier for the final boss",
         "After the final boss, rest at the Gate of Divinity grace, and find Ansbach and Thiollier nearby",
-        "After the final boss, return to St Trina"
+        "After the final boss, return to St. Trina at the Fissure to find the St. Trina Blossom."
       ]
     }
   ]
