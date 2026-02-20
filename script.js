@@ -74,25 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    // Check URL for imported save on load
-    function checkUrlForSave() {
-        if (window.location.hash.startsWith('#save=')) {
-            const encoded = window.location.hash.replace('#save=', '');
-            const importedData = decodeSave(encoded);
-            if (importedData && importedData.profiles) {
-                if (confirm('Import save from URL? This will overwrite your current progress.')) {
-                    localStorage.setItem(saveKey, JSON.stringify(importedData));
-                    alert('Save imported successfully!');
-                }
-            } else {
-                alert('Invalid or corrupted save URL.');
-            }
-            // Clean URL so it doesn't trigger again on refresh
-            window.history.replaceState(null, null, window.location.pathname + window.location.search);
-        }
-    }
-    checkUrlForSave();
-
     // Load state from local storage and migrate if necessary
     let rawState = localStorage.getItem(saveKey);
     let appData = rawState ? JSON.parse(rawState) : null;
@@ -107,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
     }
-    // Clean up
+    // Clean up empty profiles
     if (!appData.profiles['Default']) {
         appData.profiles['Default'] = { main: {}, dlc: {} };
     }
@@ -116,6 +97,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (!appData.profiles['Default'].dlc) {
         appData.profiles['Default'].dlc = {};
+    }
+
+    let currentEncoded = encodeSave(appData);
+
+    // Check URL for imported save on load
+    if (window.location.hash.startsWith('#save=')) {
+        const encoded = window.location.hash.replace('#save=', '');
+        
+        if (encoded !== currentEncoded) {
+            const importedData = decodeSave(encoded);
+            if (importedData && importedData.profiles) {
+                if (confirm('Import save from URL? This will overwrite your current progress.')) {
+                    appData = importedData;
+                    currentEncoded = encoded;
+                    localStorage.setItem(saveKey, JSON.stringify(appData));
+                } else {
+                    // Revert URL to local state
+                    window.history.replaceState(null, null, '#save=' + currentEncoded);
+                }
+            } else {
+                alert('Invalid or corrupted save URL.');
+                window.history.replaceState(null, null, '#save=' + currentEncoded);
+            }
+        }
+    } else {
+        // Automatically append the save hash if none exists
+        window.history.replaceState(null, null, '#save=' + currentEncoded);
     }
 
     let currentProfile = appData.currentProfile || 'Default';
@@ -295,11 +303,14 @@ document.addEventListener('DOMContentLoaded', () => {
         progressFill.style.width = `${percent}%`;
     }
 
-    // Save to LocalStorage
+    // Save to LocalStorage and update URL
     function saveState() {
         appData.currentProfile = currentProfile;
         appData.profiles[currentProfile] = appState;
         localStorage.setItem(saveKey, JSON.stringify(appData));
+        
+        const encoded = encodeSave(appData);
+        window.history.replaceState(null, null, '#save=' + encoded);
     }
 
     // Event Listeners
@@ -356,23 +367,45 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Share URL
+        // Share URL (Robust Copy)
         shareUrlBtn.addEventListener('click', () => {
-            const encoded = encodeSave(appData);
-            const url = new URL(window.location.href);
-            url.hash = 'save=' + encoded;
+            const url = window.location.href;
             
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(url.toString()).then(() => {
-                    const originalText = shareUrlBtn.textContent;
-                    shareUrlBtn.textContent = '✅ Copied!';
-                    setTimeout(() => shareUrlBtn.textContent = originalText, 2000);
-                }).catch(() => {
-                    prompt('Copy this URL to share/save your progress:', url.toString());
-                });
-            } else {
-                prompt('Copy this URL to share/save your progress:', url.toString());
+            function fallbackCopyTextToClipboard(text) {
+                const textArea = document.createElement("textarea");
+                textArea.value = text;
+                textArea.style.top = "0";
+                textArea.style.left = "0";
+                textArea.style.position = "fixed";
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                } catch (err) {
+                    console.error('Fallback: Oops, unable to copy', err);
+                }
+                document.body.removeChild(textArea);
             }
+
+            function success() {
+                const originalText = shareUrlBtn.textContent;
+                shareUrlBtn.textContent = '✅ Copied!';
+                setTimeout(() => shareUrlBtn.textContent = originalText, 2000);
+            }
+
+            if (!navigator.clipboard) {
+                fallbackCopyTextToClipboard(url);
+                success();
+                return;
+            }
+            
+            navigator.clipboard.writeText(url).then(function() {
+                success();
+            }, function(err) {
+                fallbackCopyTextToClipboard(url);
+                success();
+            });
         });
     }
 
