@@ -1,0 +1,8 @@
+.task-label {
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: var(--transition);
+    flex-grow: 1;
+    line-height: 1.5;
+    padding-bottom: 5px; /* Added spacing to make long text more readable */
+}
