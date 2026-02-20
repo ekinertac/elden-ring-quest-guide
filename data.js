@@ -39,7 +39,8 @@ const questData = {
                 "Use the sending gate D told you about to the Bestial Sanctum to meet Gurranq, Beast Clergyman. Give him Deathroot, and he will reward you. After you’ve given him 4 Deathroot, he will aggro, and you will need to hit him a few times to snap him out of it. After giving him 9 Deathroot, he will leave.",
                 "From the Third Church of Marika, continue north up the hill to the Rear Gael Tunnel Entrance. Talk to Alexander.",
                 "Deathroot #2 In a chest behind the boss in the Deathtouched Catacombs.",
-                "Upon reaching the Roundtable Hold, talk to everyone there. Fia will only talk while holding you. Return to The First Step Grace to talk to White-Faced Varre."
+                "Upon reaching the Roundtable Hold, talk to everyone there. Fia will only talk while holding you. Return to The First Step Grace to talk to White-Faced Varre.",
+                "Defeat the Tibia Mariner in Summonwater Village to get your first Deathroot, then speak with D again."
             ]
         },
         {
@@ -92,7 +93,8 @@ const questData = {
                 "Find an extra Glintstone Key at the academy (location: vear left after leaving the debate room and jump across rooftops until you reach the rafters above the Church of the Cuckoo.) Give the key to Thops at the Church of Irith. Reload the area and find an item where Thops was.",
                 "Find Thops at the Academy, around the corner from the Schoolhouse Classroom Grace.",
                 "You can follow Patches' advice and allow the Iron Maiden to grab youin the lowest levels of the Academy. If you do, return to Patches for some dialogue. However, this will drop you in the middle of Volcano Manor, a more difficult ares, so it isn't recommended.",
-                "In Southeastern Liurnia, go to the Gate Town Bridge to give Hyetta the Shabiri Grape. Reload the area and speak to her again."
+                "In Southeastern Liurnia, go to the Gate Town Bridge to give Hyetta the Shabiri Grape. Reload the area and speak to her again.",
+                "Speak with Rya in the pavilion east of the Scenic Isle. She asks you to retrieve her necklace."
             ]
         },
         {
@@ -107,7 +109,8 @@ const questData = {
                 "Search the ruins near Ranni’s rise for an illusory floor. Return to Seluvis and exhaust his dialogue.",
                 "Travel from Ranni’s Tower entrance directly East and drop down several platforms toward Caria Manor to speak to Pidia.",
                 "Near the Mistwood ruins, take an elevator down to the Siofra River. Continue through the area, up another elevator, and then straight forward. You’ll find Blaidd near a wind-circle for your horse.",
-                "Travel speak to Seluvis. Speak with Sellen. Then speak with Blaidd again."
+                "Travel speak to Seluvis. Speak with Sellen. Then speak with Blaidd again.",
+                "Find Seluvis's hidden puppet room under an illusory floor in the ruins near Ranni's Rise."
             ]
         },
         {
@@ -226,7 +229,8 @@ const questData = {
                 "Summon Melina to fight Margott.",
                 "After the fight, reload the area and speak to Margott behind the throne.",
                 "If you gave Nepheli the spirit ashes, travel to the Lake Facing Cliffs Grace and walk back into the throne room. Speak to Nepheli, Kenneth and Gostoc.",
-                "Speak with Enia and Gideon at the Roundtable Hold."
+                "Speak with Enia and Gideon at the Roundtable Hold.",
+                "Speak with the projection of Morgott behind the throne after defeating him to hear his final words."
             ]
         },
         {
@@ -245,7 +249,8 @@ const questData = {
                 "Travel through Castle Sol in the North to get half of the Haligtree Medallion. Then speak with Gideon.",
                 "Speak with Corhyn and Goldmask on the bridge directly above the Ancient Snow Valley Ruins grace. If you still have the Potion of Forgetfulness, you can give it to Corhyn here, and he will remain at this location. If you don't give him the potion, he will die later on, dropping an item.",
                 "Summon Alexander for the fire giant boss fight.",
-                "Do not go up to the Forge of the Giants yet. <span class=\"blocker-warning\">⚠️ BLOCKER: Committing the cardinal sin at the Forge of the Giants will alter the world state and kill/move several NPCs. Ensure you have collected everything in Leyndell first.</span>"
+                "Do not go up to the Forge of the Giants yet. <span class=\"blocker-warning\">⚠️ BLOCKER: Committing the cardinal sin at the Forge of the Giants will alter the world state and kill/move several NPCs. Ensure you have collected everything in Leyndell first.</span>",
+                "Defeat Commander Niall at Castle Sol to receive the Haligtree Secret Medallion (Left)."
             ]
         },
         {
@@ -266,7 +271,8 @@ const questData = {
                 "Continue onwards through the Haligtree to the Drainage Channel Grace. Then, return where you came from, up the ladder, and kill the Defiled Root Monster nearby. Once it’s dead, reload the area, and you should see 2 summon signs where it was. You can either choose to summon Milicent as an ally (gold) or enemy (red). If you help her, you can talk to her afterwards. Then, reload the area to find an item where she was.",
                 "Speak with Gowry.",
                 "After defeating Melania, talk to Gideon.",
-                "You can now go back to go up to the Forge of the Giants."
+                "You can now go back to go up to the Forge of the Giants.",
+                "Choose to help Millicent (Gold Sign) or fight her (Red Sign) near the Drainage Channel. Helping her is required for the needle."
             ]
         },
         {
@@ -329,7 +335,8 @@ const questData = {
                 "Travel through the Dragon Pit and head South to speak to the Dragon Communion Priestess at the Grand Altar of Dragon Communion.",
                 "Note: There are no NPC's in Charo's Hidden Grove, West of the Dragon Altar, but you can explore that at any time.",
                 "After finding the Cerulean Coast Cross, speak to Ansbach at the Main Gate Cross. Location: Jump down some Ruins from Charo's Grove. The cross is on a hill to the South West).",
-                "Forager Brood Cookbook #3: NE of the Cerulean Coast Grace, past the Furnace Golem and the Fulgurbloom Field."
+                "Forager Brood Cookbook #3: NE of the Cerulean Coast Grace, past the Furnace Golem and the Fulgurbloom Field.",
+                "Collect Forager Brood Cookbooks #1-6 from the Kindred of Rot NPCs. ⚠️ BLOCKER: Do not kill them, as this will lock out Moore's quest."
             ]
         },
         {
