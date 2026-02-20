@@ -10,11 +10,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="top-bar">
+        <div class="profile-container">
+            <label for="profile-select">Profile:</label>
+            <select id="profile-select"></select>
+            <button id="new-profile-btn" class="icon-btn" title="New Profile">+</button>
+        </div>
+        <div class="save-controls">
+            <button id="export-btn" class="top-btn">Export Save</button>
+            <button id="import-btn" class="top-btn">Import Save</button>
+            <input type="file" id="import-file" style="display: none;" accept=".json">
+        </div>
+    </div>
+
     <div class="container">
         <header>
             <h1>Elden Ring Quest Tracker</h1>
             <p class="subtitle">A Journey through the Lands Between</p>
             
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for NPCs, locations, or quests...">
+            </div>
+
             <div class="tabs">
                 <button class="tab-btn active" data-target="main">Main Game</button>
                 <button class="tab-btn" data-target="dlc">Shadow of the Erdtree</button>
