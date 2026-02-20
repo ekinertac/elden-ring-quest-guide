@@ -170,6 +170,7 @@ const questData = {
                 "Return to Ranni’s Rise and find Blaidd outside.",
                 "Speak with Iji. Then, reload the area.",
                 "Travel to the Carian Study Hall in East Liurnia. Use the Inverted Statue to go to the top and find Ranni’s cursemark (For Fia’s questline)."
+                "<span class=\"blocker-warning\">⚠️ ENDING: Completing Ranni's quest and sitting at the Elden Throne gives you the Age of Stars ending.</span>"
             ]
         },
         {
@@ -222,10 +223,12 @@ const questData = {
                 "Find Dung Eater’s body. From the Avenue Balcony Grace, head downstairs and jump onto the rooftops on the left. Search the ruined buildings until you find a well with a ladder. Go down the well and follow the path until you reach the Underground Roadside Grace. Follow the hallway, hugging the left wall, and you’ll drop down past a grate. Follow the tunnel around the corner to the left and up the ladder. Return to where Dung Eater was in the Roundtable Hold. Note: Releasing Dung Eater will result in Blackguard’s death.",
                 "Speak with Blackguard in the Leyndell Moat. Reload the area and speak to him again. Return to the Roundtable Hold to speak to Dung Eater.",
                 "Seedbed Curse #3 In the alternate version of Roundtable Hold located near the Fortified Manor grace, inside the equivalent of the Dung Eater's room. You will find it on a body that is strapped to a chair.",
+                "<span class=\"blocker-warning\">⚠️ ENDING: Once you have all 5 Seedbed Curses, return to Dung Eater in the Leyndell sewer to give him all curses. This grants the Lord of the Dung Eater ending.</span>",
                 "Complete Bernahl's request. Return to Volcano Manor to speak to him.",
                 "Speak with Corhyn and Goldmask on the coliseum cliffs, near the West Capital Rampart.",
                 "(For Corhyn’s quest) The Golden Order Principia prayerbook is hanging above the Erdtree Sanctuary Grace. To get it, on the bridge toward the Queen’s bedchamber, jump onto the rooftop to the left and go through the window. Take this book to Corhyn or Miriel and purchase the Law of Regression.",
                 "Travel down the elevator from the Erdtree Sanctuary and down some stairs. At the bottom of the stairs, read a message that says “Regression Alone Reveals Secrets”. Cast the Law of Regression from here. (Note: You may need to use a larval tear to respec, or a combination of different gear, to allow you to cast this). The statue will change and a new message will appear in front of you. Read that message. Talk to Goldmask and Then speak with Corhyn.",
+                "<span class=\"blocker-warning\">⚠️ ENDING: Completing Goldmask's quest gives you the Lord of the Golden Order ending.</span>"
                 "Summon Melina to fight Margott.",
                 "After the fight, reload the area and speak to Margott behind the throne.",
                 "If you gave Nepheli the spirit ashes, travel to the Lake Facing Cliffs Grace and walk back into the throne room. Speak to Nepheli, Kenneth and Gostoc.",
@@ -293,7 +296,8 @@ const questData = {
                 "Find Corhyn at the base of the spiral spear statue. Reload the area to find an item where he was.",
                 "Summon Nepheli and Shabriri to fight the First Elden Lord.",
                 "After the Final Boss.",
-                "If you would like to complete all of the endings, copy your save data after completing the final boss, but before making any kind of choice. You can sit at the Site of Grace."
+                "If you would like to complete all of the endings, copy your save data after completing the final boss, but before making any kind of choice. You can sit at the Site of Grace.",
+                "<span class=\"blocker-warning\">⚠️ ENDING: Simply defeating the Elden Beast without any questline prep gives you the default Elden Lord ending.</span>"
             ]
         },
         {
