@@ -11,7 +11,7 @@ An interactive, web-based quest tracker for **Elden Ring** and the **Shadow of t
 * **Thematic UI:** Clean, responsive, and dark-themed UI inspired by the Lands Between.
 
 ## How it Works
-The quest data is generated from detailed text guides (`guide.txt` and `guide-dlc.txt`). A Node.js script (`parser.js`) parses these text files and compiles them into a structured JSON format (`data.js`) which powers the frontend Vanilla JS application.
+The quest data is stored directly in a structured JSON format inside `data.js`. This serves as the single source of truth for all regions and tasks. The frontend Vanilla JS application reads this data to render the checklist and compute progress.
 
 ## Local Development
 1. Clone the repository
@@ -21,7 +21,4 @@ The quest data is generated from detailed text guides (`guide.txt` and `guide-dl
    ```
 3. Open `http://localhost:8000` in your browser.
 
-If you make modifications to the raw text guides, you can regenerate the quest data:
-```bash
-node parser.js
-```
+If you want to edit or add new quests, simply modify the JSON structure directly inside `data.js`.
