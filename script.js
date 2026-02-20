@@ -99,31 +99,22 @@ document.addEventListener('DOMContentLoaded', () => {
         appData.profiles['Default'].dlc = {};
     }
 
-    let currentEncoded = encodeSave(appData);
-
     // Check URL for imported save on load
     if (window.location.hash.startsWith('#save=')) {
         const encoded = window.location.hash.replace('#save=', '');
+        const currentEncoded = encodeSave(appData);
         
         if (encoded !== currentEncoded) {
             const importedData = decodeSave(encoded);
             if (importedData && importedData.profiles) {
                 if (confirm('Import save from URL? This will overwrite your current progress.')) {
                     appData = importedData;
-                    currentEncoded = encoded;
                     localStorage.setItem(saveKey, JSON.stringify(appData));
-                } else {
-                    // Revert URL to local state
-                    window.history.replaceState(null, null, '#save=' + currentEncoded);
                 }
             } else {
                 alert('Invalid or corrupted save URL.');
-                window.history.replaceState(null, null, '#save=' + currentEncoded);
             }
         }
-    } else {
-        // Automatically append the save hash if none exists
-        window.history.replaceState(null, null, '#save=' + currentEncoded);
     }
 
     let currentProfile = appData.currentProfile || 'Default';
@@ -310,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem(saveKey, JSON.stringify(appData));
         
         const encoded = encodeSave(appData);
-        window.history.replaceState(null, null, '#save=' + encoded);
+        window.history.replaceState(null, null, window.location.pathname + window.location.search + '#save=' + encoded);
     }
 
     // Event Listeners
@@ -377,6 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 textArea.style.top = "0";
                 textArea.style.left = "0";
                 textArea.style.position = "fixed";
+                textArea.style.opacity = "0";
                 document.body.appendChild(textArea);
                 textArea.focus();
                 textArea.select();
