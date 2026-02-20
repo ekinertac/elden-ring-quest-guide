@@ -9,15 +9,90 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const profileSelect = document.getElementById('profile-select');
     const newProfileBtn = document.getElementById('new-profile-btn');
-    const exportBtn = document.getElementById('export-btn');
-    const importBtn = document.getElementById('import-btn');
-    const importFile = document.getElementById('import-file');
+    const shareUrlBtn = document.getElementById('share-url-btn');
 
     // State
     let currentTab = 'main';
     let saveKey = 'er-quest-tracker-state';
     let searchTerm = '';
     
+    // Base64 encode/decode with unicode support
+    function utf8_to_b64(str) {
+        return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (match, p1) => {
+            return String.fromCharCode('0x' + p1);
+        }));
+    }
+
+    function b64_to_utf8(str) {
+        return decodeURIComponent(atob(str).split('').map((c) => {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+    }
+
+    // Encode/Decode Data for URL sharing
+    function encodeSave(data) {
+        const minified = { c: data.currentProfile, p: {} };
+        for (let profile in data.profiles) {
+            minified.p[profile] = { m: [], d: [] };
+            const state = data.profiles[profile];
+            if (state.main) {
+                for (let key in state.main) {
+                    if (state.main[key]) minified.p[profile].m.push(key.replace('region-main-', '').replace('-task-', '-'));
+                }
+            }
+            if (state.dlc) {
+                for (let key in state.dlc) {
+                    if (state.dlc[key]) minified.p[profile].d.push(key.replace('region-dlc-', '').replace('-task-', '-'));
+                }
+            }
+        }
+        return utf8_to_b64(JSON.stringify(minified));
+    }
+
+    function decodeSave(encoded) {
+        try {
+            const minified = JSON.parse(b64_to_utf8(encoded));
+            const decoded = { currentProfile: minified.c || 'Default', profiles: {} };
+            
+            for (let profile in minified.p) {
+                decoded.profiles[profile] = { main: {}, dlc: {} };
+                const m = minified.p[profile].m || [];
+                const d = minified.p[profile].d || [];
+                m.forEach(shortKey => {
+                    const parts = shortKey.split('-');
+                    if (parts.length === 2) decoded.profiles[profile].main[`region-main-${parts[0]}-task-${parts[1]}`] = true;
+                });
+                d.forEach(shortKey => {
+                    const parts = shortKey.split('-');
+                    if (parts.length === 2) decoded.profiles[profile].dlc[`region-dlc-${parts[0]}-task-${parts[1]}`] = true;
+                });
+            }
+            return decoded;
+        } catch (e) {
+            console.error('Error decoding save', e);
+            return null;
+        }
+    }
+    
+    // Check URL for imported save on load
+    function checkUrlForSave() {
+        if (window.location.hash.startsWith('#save=')) {
+            const encoded = window.location.hash.replace('#save=', '');
+            const importedData = decodeSave(encoded);
+            if (importedData && importedData.profiles) {
+                if (confirm('Import save from URL? This will overwrite your current progress.')) {
+                    localStorage.setItem(saveKey, JSON.stringify(importedData));
+                    alert('Save imported successfully!');
+                }
+            } else {
+                alert('Invalid or corrupted save URL.');
+            }
+            // Clean URL so it doesn't trigger again on refresh
+            window.history.replaceState(null, null, window.location.pathname + window.location.search);
+        }
+    }
+    checkUrlForSave();
+
     // Load state from local storage and migrate if necessary
     let rawState = localStorage.getItem(saveKey);
     let appData = rawState ? JSON.parse(rawState) : null;
@@ -33,11 +108,20 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
     // Clean up
-    if (!appData.profiles['Default'].main) {
+    if (!appData.profiles['Default']) {
         appData.profiles['Default'] = { main: {}, dlc: {} };
     }
+    if (!appData.profiles['Default'].main) {
+        appData.profiles['Default'].main = {};
+    }
+    if (!appData.profiles['Default'].dlc) {
+        appData.profiles['Default'].dlc = {};
+    }
 
-    let currentProfile = appData.currentProfile;
+    let currentProfile = appData.currentProfile || 'Default';
+    if (!appData.profiles[currentProfile]) {
+        currentProfile = Object.keys(appData.profiles)[0] || 'Default';
+    }
     let appState = appData.profiles[currentProfile];
 
     // Initialize App
@@ -272,52 +356,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Import / Export
-        exportBtn.addEventListener('click', () => {
-            const dataStr = JSON.stringify(appData, null, 2);
-            const blob = new Blob([dataStr], { type: "application/json" });
-            const url = URL.createObjectURL(blob);
+        // Share URL
+        shareUrlBtn.addEventListener('click', () => {
+            const encoded = encodeSave(appData);
+            const url = new URL(window.location.href);
+            url.hash = 'save=' + encoded;
             
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `elden-ring-tracker-save.json`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        });
-
-        importBtn.addEventListener('click', () => {
-            importFile.click();
-        });
-
-        importFile.addEventListener('change', (e) => {
-            const file = e.target.files[0];
-            if (!file) return;
-
-            const reader = new FileReader();
-            reader.onload = function(evt) {
-                try {
-                    const parsed = JSON.parse(evt.target.result);
-                    if (parsed && parsed.profiles && parsed.currentProfile) {
-                        appData = parsed;
-                        currentProfile = appData.currentProfile;
-                        appState = appData.profiles[currentProfile];
-                        saveState();
-                        populateProfiles();
-                        renderContent();
-                        updateProgress();
-                        alert("Save imported successfully!");
-                    } else {
-                        alert("Invalid save file format.");
-                    }
-                } catch (err) {
-                    alert("Error parsing save file.");
-                }
-            };
-            reader.readAsText(file);
-            // Reset input so same file can be selected again if needed
-            e.target.value = '';
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(url.toString()).then(() => {
+                    const originalText = shareUrlBtn.textContent;
+                    shareUrlBtn.textContent = '✅ Copied!';
+                    setTimeout(() => shareUrlBtn.textContent = originalText, 2000);
+                }).catch(() => {
+                    prompt('Copy this URL to share/save your progress:', url.toString());
+                });
+            } else {
+                prompt('Copy this URL to share/save your progress:', url.toString());
+            }
         });
     }
 
