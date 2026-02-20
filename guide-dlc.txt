@@ -26,7 +26,7 @@ Forager Brood Cookbook #3: NE of the Cerulean Coast Grace, past the Furnace Gole
 (Optional) Summon Leda to fight Rellana
 Scadu Altus/Church District
 
-Note: Getting close to the Shadow Keep will cause NPCs to enter a new phase. So explore the other directions first.
+Note: Getting close to the Shadow Keep will cause NPCs to enter a new phase. So explore the other directions first. ⚠️ BLOCKER: Approaching the Shadow Keep triggers the message "Somewhere a Great Rune has broken". This breaks Miquella's charm, advancing all NPC quests and locking you out of Moore's Forager Brood cookbooks if you haven't talked to him and them yet.
 Talk to Leda and Hornsent at the Highcross Road Grace. Then speak to Freyja at Three-Path Cross Grace
 Defeat the invading Fire Knight Queelign at the Church of the Crusade
 Forager Brood Cookbook #4: Find an injured Forager Brood North of the Church of the Crusade. Use a warming stone on it. Then, reload the area and return to that location.
@@ -76,7 +76,8 @@ Speak to Ansbach about Freyja. Then give him the Secret Rite Scroll, found just 
 If Leda is still at High Cross Road, exhaust her dialogue, reloading the area until she starts to repeat herself.
 Return to the First Floor Storeroom where Ansbach was to find a pair of summon signs for a fight between Leda and Ansbach. Choosing Ansbach gives you his weapon, and ensures he is alive for the end of the game. Choosing Leda gives you a unique talisman and Ansbach's weapon. You can also skip this fight. See Enir Ilim section for endgame consequences. (Note: For this to trigger, you must either 1) Choose Leda against Hornsent 2) Skip the Hornsent fight and summon Hornsent for Messmer)
 Find an Iris of Grace in a makeshift pot hospital on the way from the storeroom to the Ancient Ruins
-If alive, Hornsent will invade in the Church of the Bud, just before the Romina boss room (You can find him here, even after the boss)
+If alive, Hornsent will invade in the Church of the Bud, just before the Romina boss room (You can find him here, even after the boss). 
+⚠️ BLOCKER: Do NOT burn the Sealing Tree behind Romina's arena until you are ready! This will teleport you to Enir Ilim and permanently lock out all unfinished NPC questlines in the DLC.
 (Optional) Summon Dane to fight Romina.
 Finger Ruins
 

@@ -158,7 +158,7 @@ const questData = {
         "Go speak to Iji",
         "Go to the Forlorn Hound Evergael to free Blaidd",
         "Go speak to Iji",
-        "Take the path into the Starfall Crater to reach Nokron. Go through Nokron to the Night’s Sacred Ground to find the Fingerslayer Blade. Bring it to Ranni. Then reload the area and return to Ranni's room.",
+        "Take the path into the Starfall Crater to reach Nokron. Go through Nokron to the Night’s Sacred Ground to find the Fingerslayer Blade. Bring it to Ranni. Then reload the area and return to Ranni's room. <span class=\"blocker-warning\">⚠️ BLOCKER: Giving the Fingerslayer Blade to Ranni will cause Seluvis to die, failing his questline and locking you out of the Magic Scorpion Charm. Complete his quest first!</span>",
         "From Ranni’s Rise, head to a tower to the North and take the waygate to Ainsel River Main. Rest at the first Grace and choose “talk to miniature Ranni” 3 times. Throughout the rest of this quest, check for the \"Talk to Ranni\" option any time you rest at a Grace.",
         "Continue through Nokstella until you get a discarded key. Use it on the chest in the Raya Lucaria Grand Library. Then, cross the Lake of Rot and climb in a coffin. Continue until you find Ranni.",
         "Return to Ranni’s Rise and find Blaidd outside.",
@@ -202,7 +202,7 @@ const questData = {
         "Continue on from the Prison Town Church Grace until you receive the Serpent’s Amnion at the Temple of Eiglay. Give the Serpent’s Amnion to Rya at Volcano Manor. Reload the area and return to Rya (She has disappeared) and Tanith. Reload the area and speak to Tanith again.",
         "Continuing on from the Temple of Eiglay Grace through the lava, you can find Rya in a small room. Speak to her until you've exhausted her dialogue, and then you’ll have a choice to make: you can do what Rya asks, do what Tanith asks, or do nothing. If you do what Tanith asks, speak to them both again at Volcano Manor. If you do nothing, reload the area and return to Rya",
         "Seedbed Curse #1 From Rya's location, go out the window and up the ladder. Then, continue to your left. When you get to a room with stairs, go up both flights of stairs and then through a door, where you should see a stonesword key path. Use the cages to jump down and find the item on a body tied to a chair.",
-        "If you are not completing the manor's requests, you can continue on and complete the rest of Volcano Manor and complete the final boss. Otherwise, leave Volcano Manor for now without completing the final boss."
+        "If you are not completing the manor's requests, you can continue on and complete the rest of Volcano Manor and complete the final boss (Rykard). Otherwise, leave Volcano Manor for now without completing the final boss. <span class=\"blocker-warning\">⚠️ BLOCKER: Defeating Rykard will immediately end all Volcano Manor assassination requests and Rya's questline. Complete them first!</span>"
       ]
     },
     {
@@ -241,7 +241,7 @@ const questData = {
         "Go through Castle Sol in the North to get half of the Haligtree Medallion. Then, talk to Gideon",
         "Talk to Corhyn and Goldmask on the bridge directly above the Ancient Snow Valley Ruins grace. If you still have the Potion of Forgetfulness, you can give it to Corhyn here, and he will remain at this location. If you don't give him the potion, he will die later on, dropping an item",
         "Summon Alexander for the fire giant boss fight",
-        "Do not go up to the Forge of the Giants yet"
+        "Do not go up to the Forge of the Giants yet. <span class=\"blocker-warning\">⚠️ BLOCKER: Committing the cardinal sin at the Forge of the Giants will alter the world state and kill/move several NPCs. Ensure you have collected everything in Leyndell first.</span>"
       ]
     },
     {
@@ -271,7 +271,7 @@ const questData = {
         "Summon Bernahl for Godskin Duo fight",
         "Find Alexander by using a stonesword key just past the Dragon Temple Altar Grace. Exhaust his dialogue. Then, visit Jar-Bairn. Exhaust his dialogue and reload the area.",
         "From the Beside the Great Bridge Grace, get onto the bridge and go left to find Bernahl",
-        "Major Story Beat: Do not complete the final boss, at the top of the Great Bridge, until you have completed everything above. This will lock you out of some paths."
+        "Major Story Beat: Do not complete Maliketh, the final boss at the top of the Great Bridge, until you have completed everything above. <span class=\"blocker-warning\">⚠️ BLOCKER: Defeating Maliketh turns Leyndell into the Capital of Ash, permanently locking out Goldmask, Corhyn, Dung Eater, and Nepheli's quests if not completed.</span>"
       ]
     },
     {
@@ -330,7 +330,7 @@ const questData = {
     {
       "title": "Scadu Altus/Church District",
       "tasks": [
-        "Note: Getting close to the Shadow Keep will cause NPCs to enter a new phase. So explore the other directions first.",
+        "Note: Getting close to the Shadow Keep will cause NPCs to enter a new phase. So explore the other directions first. <span class=\"blocker-warning\">⚠️ BLOCKER: Approaching the Shadow Keep triggers the message \"Somewhere a Great Rune has broken\". This breaks Miquella's charm, advancing all NPC quests and locking you out of Moore's Forager Brood cookbooks if you haven't talked to him and them yet.</span>",
         "Talk to Leda and Hornsent at the Highcross Road Grace. Then speak to Freyja at Three-Path Cross Grace",
         "Defeat the invading Fire Knight Queelign at the Church of the Crusade",
         "Forager Brood Cookbook #4: Find an injured Forager Brood North of the Church of the Crusade. Use a warming stone on it. Then, reload the area and return to that location.",
@@ -389,7 +389,8 @@ const questData = {
         "If Leda is still at High Cross Road, exhaust her dialogue, reloading the area until she starts to repeat herself.",
         "Return to the First Floor Storeroom where Ansbach was to find a pair of summon signs for a fight between Leda and Ansbach. Choosing Ansbach gives you his weapon, and ensures he is alive for the end of the game. Choosing Leda gives you a unique talisman and Ansbach's weapon. You can also skip this fight. See Enir Ilim section for endgame consequences. (Note: For this to trigger, you must either 1) Choose Leda against Hornsent 2) Skip the Hornsent fight and summon Hornsent for Messmer)",
         "Find an Iris of Grace in a makeshift pot hospital on the way from the storeroom to the Ancient Ruins",
-        "If alive, Hornsent will invade in the Church of the Bud, just before the Romina boss room (You can find him here, even after the boss)",
+        "If alive, Hornsent will invade in the Church of the Bud, just before the Romina boss room (You can find him here, even after the boss).",
+        "<span class=\"blocker-warning\">⚠️ BLOCKER: Do NOT burn the Sealing Tree behind Romina's arena until you are ready! This will teleport you to Enir Ilim and permanently lock out all unfinished NPC questlines in the DLC.</span>",
         "(Optional) Summon Dane to fight Romina."
       ]
     },

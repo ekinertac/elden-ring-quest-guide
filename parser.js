@@ -63,7 +63,14 @@ function parseOriginalFile(filename, startLineString) {
                 let cleanTask = line.replace(/^\*{2,5}\s*/, '').trim();
                 // Also remove leading dashes if any
                 cleanTask = cleanTask.replace(/^- /, '').trim();
-                currentRegion.tasks.push(cleanTask);
+                
+let finalTask = cleanTask;
+if (finalTask.includes('⚠️ BLOCKER:')) {
+    finalTask = finalTask.replace('⚠️ BLOCKER:', '<span class="blocker-warning">⚠️ BLOCKER:');
+    finalTask += '</span>';
+}
+currentRegion.tasks.push(finalTask);
+
             }
         }
     }

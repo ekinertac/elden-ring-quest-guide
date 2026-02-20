@@ -133,7 +133,7 @@ Find a message from Blaidd South East from the Mistwood Ruins on a ramp leading 
 Go speak to Iji
 Go to the Forlorn Hound Evergael to free Blaidd
 Go speak to Iji
-***** Take the path into the Starfall Crater to reach Nokron. Go through Nokron to the Night’s Sacred Ground to find the Fingerslayer Blade. Bring it to Ranni. Then reload the area and return to Ranni's room.
+***** Take the path into the Starfall Crater to reach Nokron. Go through Nokron to the Night’s Sacred Ground to find the Fingerslayer Blade. Bring it to Ranni. Then reload the area and return to Ranni's room. ⚠️ BLOCKER: Giving the Fingerslayer Blade to Ranni will cause Seluvis to die, failing his questline and locking you out of the Magic Scorpion Charm. Complete his quest first!
 ***** From Ranni’s Rise, head to a tower to the North and take the waygate to Ainsel River Main. Rest at the first Grace and choose “talk to miniature Ranni” 3 times. Throughout the rest of this quest, check for the "Talk to Ranni" option any time you rest at a Grace.
 ***** Continue through Nokstella until you get a discarded key. Use it on the chest in the Raya Lucaria Grand Library. Then, cross the Lake of Rot and climb in a coffin. Continue until you find Ranni.
 Return to Ranni’s Rise and find Blaidd outside.
@@ -168,7 +168,7 @@ Complete Patches' quest. Once it's completed, speak to Patches, then reload the 
 Continue on from the Prison Town Church Grace until you receive the Serpent’s Amnion at the Temple of Eiglay. Give the Serpent’s Amnion to Rya at Volcano Manor. Reload the area and return to Rya (She has disappeared) and Tanith. Reload the area and speak to Tanith again.
 Continuing on from the Temple of Eiglay Grace through the lava, you can find Rya in a small room. Speak to her until you've exhausted her dialogue, and then you’ll have a choice to make: you can do what Rya asks, do what Tanith asks, or do nothing. If you do what Tanith asks, speak to them both again at Volcano Manor. If you do nothing, reload the area and return to Rya
 Seedbed Curse #1 From Rya's location, go out the window and up the ladder. Then, continue to your left. When you get to a room with stairs, go up both flights of stairs and then through a door, where you should see a stonesword key path. Use the cages to jump down and find the item on a body tied to a chair.
-If you are not completing the manor's requests, you can continue on and complete the rest of Volcano Manor and complete the final boss. Otherwise, leave Volcano Manor for now without completing the final boss.
+If you are not completing the manor's requests, you can continue on and complete the rest of Volcano Manor and complete the final boss (Rykard). Otherwise, leave Volcano Manor for now without completing the final boss. ⚠️ BLOCKER: Defeating Rykard will immediately end all Volcano Manor assassination requests and Rya's questline. Complete them first!
 Leyndell
 
 ** Once you find a Seedbed Curse, talk to Dung Eater in the Roundtable Hold
@@ -201,7 +201,7 @@ Deathroot # 8 From the Freezing Lake grace, circle up the hill to the left. Then
 Go through Castle Sol in the North to get half of the Haligtree Medallion. Then, talk to Gideon
 Talk to Corhyn and Goldmask on the bridge directly above the Ancient Snow Valley Ruins grace. If you still have the Potion of Forgetfulness, you can give it to Corhyn here, and he will remain at this location. If you don't give him the potion, he will die later on, dropping an item
 Summon Alexander for the fire giant boss fight
-Do not go up to the Forge of the Giants yet
+Do not go up to the Forge of the Giants yet. ⚠️ BLOCKER: Committing the cardinal sin at the Forge of the Giants will alter the world state and kill/move several NPCs. Ensure you have collected everything in Leyndell first.
 Consecrated Snowfield/ Haligtree: Accessed by getting both Medallion halves, going to the Grand Lift of Rold, and click left or right to “hoist secret medallion”
 
 Deathroot #9 In the Hidden Path to the Haligtree catacombs, jump down onto an invisible path. Look for messages or use your rainbow stones to find your way. The deathroot is in a chest behind the final boss.
@@ -225,7 +225,7 @@ Once you reach a Site of Grace, speak to everyone at the Roundtable Hold
 Summon Bernahl for Godskin Duo fight
 Find Alexander by using a stonesword key just past the Dragon Temple Altar Grace. Exhaust his dialogue. Then, visit Jar-Bairn. Exhaust his dialogue and reload the area.
 From the Beside the Great Bridge Grace, get onto the bridge and go left to find Bernahl
-Major Story Beat: Do not complete the final boss, at the top of the Great Bridge, until you have completed everything above. This will lock you out of some paths.
+Major Story Beat: Do not complete Maliketh, the final boss at the top of the Great Bridge, until you have completed everything above. ⚠️ BLOCKER: Defeating Maliketh turns Leyndell into the Capital of Ash, permanently locking out Goldmask, Corhyn, Dung Eater, and Nepheli's quests if not completed.
 Capital of Ash
 
 Talk to everybody in the Roundtable Hold
