@@ -169,8 +169,8 @@ const questData = {
                 "Continue through Nokstella until you get a discarded key. Use it on the chest in the Raya Lucaria Grand Library. Then, cross the Lake of Rot and climb in a coffin. Continue until you find Ranni.",
                 "Return to Ranni’s Rise and find Blaidd outside.",
                 "Speak with Iji. Then, reload the area.",
-                "Travel to the Carian Study Hall in East Liurnia. Use the Inverted Statue to go to the top and find Ranni’s cursemark (For Fia’s questline)."
-                "<span class=\"blocker-warning\">⚠️ ENDING: Completing Ranni's quest and sitting at the Elden Throne gives you the Age of Stars ending.</span>"
+                "Travel to the Carian Study Hall in East Liurnia. Use the Inverted Statue to go to the top and find Ranni's cursemark (For Fia's questline).",
+                "<span class=\"blocker-warning\">⚠️ ENDING: Completing Ranni's quest and sitting at the Elden Throne gives you the Age of Stars ending.</span>",
             ]
         },
         {
@@ -228,7 +228,7 @@ const questData = {
                 "Speak with Corhyn and Goldmask on the coliseum cliffs, near the West Capital Rampart.",
                 "(For Corhyn’s quest) The Golden Order Principia prayerbook is hanging above the Erdtree Sanctuary Grace. To get it, on the bridge toward the Queen’s bedchamber, jump onto the rooftop to the left and go through the window. Take this book to Corhyn or Miriel and purchase the Law of Regression.",
                 "Travel down the elevator from the Erdtree Sanctuary and down some stairs. At the bottom of the stairs, read a message that says “Regression Alone Reveals Secrets”. Cast the Law of Regression from here. (Note: You may need to use a larval tear to respec, or a combination of different gear, to allow you to cast this). The statue will change and a new message will appear in front of you. Read that message. Talk to Goldmask and Then speak with Corhyn.",
-                "<span class=\"blocker-warning\">⚠️ ENDING: Completing Goldmask's quest gives you the Lord of the Golden Order ending.</span>"
+                "<span class=\"blocker-warning\">⚠️ ENDING: Completing Goldmask's quest gives you the Lord of the Golden Order ending.</span>",
                 "Summon Melina to fight Margott.",
                 "After the fight, reload the area and speak to Margott behind the throne.",
                 "If you gave Nepheli the spirit ashes, travel to the Lake Facing Cliffs Grace and walk back into the throne room. Speak to Nepheli, Kenneth and Gostoc.",
